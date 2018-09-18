@@ -1,0 +1,25 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+# Functions {#functions}
+
+You’ll need to organize your code into functions in order to use the code in a package.
+
+Function structure:
+
+```{r}
+foo <- function(x) {
+  x^2
+}
+```
+
+You can call the function
+
+```{r}
+foo(5)
+```

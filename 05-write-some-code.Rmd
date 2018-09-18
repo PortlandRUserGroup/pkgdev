@@ -1,0 +1,22 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+
+# Write some code {#write-some-code}
+
+## Edit code, run, modify, repeat
+
+xxxx
+
+## Code
+
+## Docs
+
+## Run document/install
+
+## Yay!

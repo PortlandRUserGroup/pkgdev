@@ -1,0 +1,29 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+# Extras
+
+## tests {#extras-tests}
+
+xxx
+
+## continuous integration {#extras-ci}
+
+xxx
+
+## vignettes {#extras-vign}
+
+xxx
+
+## resources {#extras-resources}
+
+* R packages, Hadley Wickham <http://r-pkgs.had.co.nz/>
+
+## bar {#extras-bar}
+
+xxx

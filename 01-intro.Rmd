@@ -1,0 +1,27 @@
+# Introduction {#intro}
+
+## Setup
+
+Does everyone have `devtools` installed?
+
+```r
+install.packages("devtools")
+```
+
+Check out the devtools cheat sheet: <https://rawgit.com/rstudio/cheatsheets/master/package-development.pdf>
+
+> note that devtools is being split into many pkgs, just be aware <https://github.com/r-lib/devtools#conscious-uncoupling>
+
+## Why make an R package? {#package}
+
+- the best way to organize code
+- have function documentation
+- have package documentation
+- can have tests
+- allow for namespacing
+- make it easy to wrap compiled code
+- good job skill
+- if on CRAN, make your code useable by others
+
+You'll be glad you moved your code into a package.
+

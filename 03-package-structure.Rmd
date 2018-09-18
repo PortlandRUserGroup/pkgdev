@@ -1,0 +1,60 @@
+```{r echo = FALSE}
+knitr::opts_chunk$set(
+  comment = "#>",
+  warning = FALSE,
+  message = FALSE
+)
+```
+
+
+# Package structure {#package-structure}
+
+## Code (`R/`)
+
+The `R/` folder contains any number of `.R` files. 
+
+It's worth thinking about organization, see <http://r-pkgs.had.co.nz/r.html#r-organising> for more.
+
+
+## Package metdata (`DESCRIPTION`)
+
+```
+Package: mypackage
+Title: What The Package Does (one line, title case required)
+Version: 0.1
+Authors@R: person("First", "Last", email = "first.last@example.com",
+                  role = c("aut", "cre"))
+Description: What the package does (one paragraph)
+Depends: R (>= 3.1.0)
+License: What license is it under?
+LazyData: true
+```
+
+## Object documentation (`man/`)
+
+xxx
+
+## Vignettes (`vignettes/`)
+
+xxx
+
+## Testing (`tests/`)
+
+xxx
+
+## Namespaces (`NAMESPACE`)
+
+xxx
+
+## Data (`data/`)
+
+xxx
+
+## Complied Code (`src/`)
+
+xxx
+
+## Installed files (`inst/`)
+
+xxx
+
