@@ -22,6 +22,8 @@ description: "R package development workshop"
 Packages
 
 * `devtools`: <https://cran.rstudio.com/web/packages/devtools/>
+* `testthat`: <https://cran.rstudio.com/web/packages/testthat/>
+* `knitr`: <https://cran.rstudio.com/web/packages/knitr/>
 
 ## Installation
 
