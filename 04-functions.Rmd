@@ -23,3 +23,25 @@ You can call the function
 ```{r}
 foo(5)
 ```
+
+## Exercise
+
+__Write you own function__
+
+* Write a function
+* Run it!
+* Any problems? report back
+
+
+## Functions in a package
+
+In a real R package you DO NOT want to export all functions in the package. 
+
+RStudio/`devtools`/`usethis`/etc. do put 
+
+`exportPattern("^[^\\.]")`
+
+in your `NAMESPACE` file by default. 
+
+Important: Make sure to remove this and explicitly export functions that you want 
+users to use with RStudio buttons or `devtools::document()` or similar.

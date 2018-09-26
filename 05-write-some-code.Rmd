@@ -7,16 +7,75 @@ knitr::opts_chunk$set(
 ```
 
 
-# Write some code {#write-some-code}
+# Coding in a package {#write-some-code}
 
 ## Edit code, run, modify, repeat
 
-xxxx
+When developing a package, find whatever method is most efficient for you 
+to develop the package quickly. 
+
+You wan to be able to edit code, then run/test it, modify, rerun, modify, etc. 
+until you are happy with it. 
+
+For some this may mean working in an IDE (RStudio) - for others this means
+a text editor and console - for others maybe Vim or Emacs. 
+
+Get used to the keyboard shortcuts or buttons to make this flow easy and 
+quick.
 
 ## Code
 
+### Exercise
+
+__Write you own function__
+
+* Write a function
+* Put it in a file in your R package
+
 ## Docs
 
-## Run document/install
+Time to document your function! 
+
+Above your function start each line with `#'`. There's many, many 
+options for documenting functions. Let's do a minimal set:
+
+* Title
+* Export tag
+* Parameter definitions
+* Return tag
+* Examples
+
+```r
+#' Multiply a number by 2
+#' 
+#' @export
+#' @param x a numeric value. required
+#' @return a number
+#' @examples
+#' multiply2(x = 5)
+multiply2 <- function(x) {
+  stopifnot(is.numeric(x))
+  x * 2
+}
+```
+
+## Run document
+
+In RStudio push the document button or keyboard shortcut, or on the command line 
+run `devtools::document()` or similar. 
+
+Notice what state your `NAMESPACE` file is in before and after.
+
+## Install it
+
+Now install the package. 
+
+* in RStudio: Install and Restart
+* command line: `devtools::install()`
+* restart your R session
+* load your package `library(packagename)`
+* Can you run your function?
+  * if not, let's dig in and sort it out
 
 ## Yay!
+

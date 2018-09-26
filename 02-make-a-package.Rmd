@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
 
 # Make a package {#make-a-package}
 
-Let's make a package!
+Let's start making a package!
 
 ## in RStudio
 
@@ -46,3 +46,13 @@ mason::mason('bar')
 
 Optionally, you can use the `usethis` package <https://github.com/r-lib/usethis> 
 to help in step in package create/maintainance.
+
+```r
+use_mit_license("My Name")
+use_package("MASS", "Suggests")
+use_dev_package("callr")
+use_readme_md()
+use_news_md()
+use_test("my-test")
+use_git()
+```

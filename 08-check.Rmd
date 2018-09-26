@@ -9,8 +9,40 @@ knitr::opts_chunk$set(
 
 # Package checks {#package-checks}
 
-xxx
+Now that we've built an R package, we need to check it. 
 
-## xxx
+Run R check as often as possible to make sure you 
+aren't breaking something in your package. 
 
-xxx
+## RStudio
+
+Keyboard shortchuts: shift + command + E (shift + ctrl + E)
+
+OR use buttons
+
+## command line
+
+from your shell
+
+```sh
+Rscript -e 'devtools::check()'
+```
+
+OR from within R
+
+```r
+devtools::check()
+```
+
+OR with the newer package [rcmdcheck](https://github.com/r-lib/rcmdcheck)
+
+```r
+rcmdcheck::rcmdcheck()
+```
+
+## the really hard way
+
+```sh
+R CMD BUILD your_package_folder
+R CMD CHECK your_package_name.tar.gz
+```

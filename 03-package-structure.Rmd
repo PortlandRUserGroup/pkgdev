@@ -9,13 +9,6 @@ knitr::opts_chunk$set(
 
 # Package structure {#package-structure}
 
-## Code (`R/`)
-
-The `R/` folder contains any number of `.R` files. 
-
-It's worth thinking about organization, see <http://r-pkgs.had.co.nz/r.html#r-organising> for more.
-
-
 ## Package metdata (`DESCRIPTION`)
 
 ```
@@ -30,19 +23,40 @@ License: What license is it under?
 LazyData: true
 ```
 
+## Code (`R/`)
+
+The `R/` folder contains any number of `.R` files. 
+
+It's worth thinking about organization, see <http://r-pkgs.had.co.nz/r.html#r-organising> for more.
+
+## Namespaces (`NAMESPACE`)
+
+The `NAMESPACE` file contains:
+
+* what to import from othe packages
+* what to export (expose publicly), available via `::` 
+    * note that internal fxns are still available via `:::`
+* what does `importFrom()` mean? how is it different from `import()`
+
+__Hot tips__
+
+* If you run into namespace problems, delete the lines in `NAMESPACE` and re-document the package
+* if you accidentally delete the `NAMESPACE` file, re-document
+* it's a good place to look for: 
+    * what you're exporting and what you are not exporting
+    * same for importing
+
+
 ## Object documentation (`man/`)
 
-xxx
+
+
 
 ## Vignettes (`vignettes/`)
 
-xxx
+
 
 ## Testing (`tests/`)
-
-xxx
-
-## Namespaces (`NAMESPACE`)
 
 xxx
 
