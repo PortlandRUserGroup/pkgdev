@@ -20,8 +20,16 @@ Authors@R: person("First", "Last", email = "first.last@example.com",
 Description: What the package does (one paragraph)
 Depends: R (>= 3.1.0)
 License: What license is it under?
-LazyData: true
+URL: http://someurl
+BugReports: http://someurl
 ```
+
+gotchas/must do's: 
+
+* no period at end of `Title`!
+* single quote words in the `Description` that are likely to not be
+known in a simple spell checker.
+* ABSOLUTELY make sure to include url for where the source code is and where to report bugs/issues. Seriously, this is not a joke. I do not use packages that don't have URLs.
 
 ## Code (`R/`)
 
@@ -50,25 +58,38 @@ __Hot tips__
 ## Object documentation (`man/`)
 
 
+`man/` contains files with extension `.Rd`. 
+
+You should not be editing these by hand. 
+
+Use `roxygen2` package with documentation associated with your code in `.R` files.
 
 
 ## Vignettes (`vignettes/`)
 
+Vignettes are typically longer form examples/documentation on your package, and are linked to on the CRAN page for each package. See \@ref(extras-vign) for more.
 
 
-## Testing (`tests/`)
+## Tests (`tests/`)
 
-xxx
+Tests help you make sure your package does what you expect it to do, including as you make changes. 
+
+See \@ref(tests) for more.
 
 ## Data (`data/`)
 
-xxx
+`data/` holds package data, used in your package functions, and optionally exposed to the user.
 
 ## Complied Code (`src/`)
 
-xxx
+Typically C or C++ code ... too much detail for now.
+
+This is typically the problem when you see a bunch of stuff printed to the console when you have package installation problems - once a binary is available installation is sorted.
 
 ## Installed files (`inst/`)
 
-xxx
+Holds various files used by the package, e.g., 
 
+`inst/examples` - files you want to use in examples that are not R objects, e.g., csv files
+
+You can access these files with `system.file("examples/file.csv", package = "your_package")`

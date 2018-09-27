@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 
 Now that we've built an R package, we need to check it. 
 
-Run R check as often as possible to make sure you 
+Run R check often to make sure you 
 aren't breaking something in your package. 
 
 ## RStudio
@@ -46,3 +46,8 @@ rcmdcheck::rcmdcheck()
 R CMD BUILD your_package_folder
 R CMD CHECK your_package_name.tar.gz
 ```
+
+## see also
+
+* R-hub: `rhub` package (many different fxn options), website: <https://builder.r-hub.io/>, R pkg <https://cran.rstudio.com/web/packages/rhub/>
+* win-builder: via `devtools::build_win()`

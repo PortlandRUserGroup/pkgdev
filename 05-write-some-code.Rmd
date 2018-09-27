@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 When developing a package, find whatever method is most efficient for you 
 to develop the package quickly. 
 
-You wan to be able to edit code, then run/test it, modify, rerun, modify, etc. 
+You want to be able to edit code, then run/test it, modify, rerun, modify, etc. 
 until you are happy with it. 
 
 For some this may mean working in an IDE (RStudio) - for others this means
@@ -22,6 +22,8 @@ a text editor and console - for others maybe Vim or Emacs.
 
 Get used to the keyboard shortcuts or buttons to make this flow easy and 
 quick.
+
+`devtools::load_all()` (or equivalent buttons/shortcuts in IDE) is your friend - though beware you still want to check your package outside of a load all context (See \@ref(package-checks))
 
 ## Code
 
@@ -37,7 +39,11 @@ __Write you own function__
 Time to document your function! 
 
 Above your function start each line with `#'`. There's many, many 
-options for documenting functions. Let's do a minimal set:
+options for documenting functions. 
+
+### Exercise
+
+__Let's do a minimal set:__
 
 * Title
 * Export tag
@@ -59,14 +65,14 @@ multiply2 <- function(x) {
 }
 ```
 
-## Run document
+## Generate documentation
 
 In RStudio push the document button or keyboard shortcut, or on the command line 
 run `devtools::document()` or similar. 
 
 Notice what state your `NAMESPACE` file is in before and after.
 
-## Install it
+## Install the package
 
 Now install the package. 
 

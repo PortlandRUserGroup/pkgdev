@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
 
 # Dependencies {#dependencies}
 
-Dependencies in R package land means other R packages. 
+Dependencies = other R packages. 
 
 There are (mostly) three types:
 
@@ -25,11 +25,22 @@ There are (mostly) three types:
 - Add a declaration of what you are importing from the package:
     + all of the package, or (`@import package`)
     + certain functions (`@importFrom package function`)
+    + there's no standard for where to do this. 
+        + i like to do in a package named manual file (e.g., `foobar-package.R`) so you can keep track of all imports in one place
+        + but some like to list imports in each file/function where they are used
 
 You can do this manually or via `usethis::use_package('package_name')`
 
 ## Add a dependency to a package
 
-```r
-xxxx
-```
+### Exercise
+
+Choose a package that's easy for you to work with. 
+
+Add it to your package
+
+Reinstall and load your package
+
+Does it work?
+
+## BONUS: What are system dependencies?

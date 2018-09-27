@@ -8,22 +8,52 @@ knitr::opts_chunk$set(
 
 # Extras
 
-## tests {#extras-tests}
+## License {#extras-license}
 
-xxx
+[Choose A License](https://choosealicense.com/) is a great resource for choosing a license in general. 
+
+For R packages, a safe bet is MIT
+
+Karl Broman has some [good advice on choosing a license for your R package](http://kbroman.org/pkg_primer/pages/licenses.html).
 
 ## continuous integration {#extras-ci}
 
-xxx
+CI is integral to a healthy package workflow. 
+
+The "continuous" part means each deployment to github/gitlab is 
+checked.
+
+Check out [travis][] and [tic][] for R based helpers.
 
 ## vignettes {#extras-vign}
 
-xxx
+TLDR: if nothing else, you should have examples in your README, correct? Just make a vignette out of that. 
+
+vignettes are super important - if users don't know how to use your package they won't use it. 
+
+See [R pkgs vignettes chapter](http://r-pkgs.had.co.nz/vignettes.html) for more.
 
 ## resources {#extras-resources}
 
-* R packages, Hadley Wickham <http://r-pkgs.had.co.nz/>
+if/when you run into trouble:
 
-## bar {#extras-bar}
+* [Writing an R package from scratch](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/) - Hilary Parker
+* [Developing R packages](https://github.com/jtleek/rpackages) - Jeff Leek
+* [stat545 - Write your own R package](http://stat545.com/packages00_index.html) - Jenny Bryan's statistics 545 class at UBC
+* [R package primer](http://kbroman.org/pkg_primer/) - Karl Boman
+* [Making Your First R Package](http://tinyheero.github.io/jekyll/update/2015/07/26/making-your-first-R-package.html) - Fong Chun Chan
+* [R Package Development Pictorial](http://www.mjdenny.com/R_Package_Pictorial.html) - Matthew Denny
+* [Coursera course on building R packages](https://www.coursera.org/learn/r-packages)
+* [R Packages](http://r-pkgs.had.co.nz/) by Hadley for a full treatment of the subject.
+* From time to time you may need to reference CRAN's [Writing R Extensions](https://cran.r-project.org/doc/manuals/r-release/R-exts.html).
 
-xxx
+## CRAN/Bioconductor
+
+No experience with Bioconductor, though I can put you in touch with people that do. 
+
+CRAN is a slippery target. `devtools::release()` makes this easier, reminding you to check many things that may get your package rejected.
+
+
+
+[tic]: https://github.com/ropenscilabs/tic
+[travis]: https://github.com/ropenscilabs/travis

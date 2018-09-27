@@ -9,11 +9,13 @@ knitr::opts_chunk$set(
 
 # Tests {#tests}
 
-Tests are quite important to a healthy package. 
+Tests are really important to a healthy package. 
 
 Some people even start off with tests! 😮 see [TDD, or "test driven development"](https://en.wikipedia.org/wiki/Test-driven_development)
 
 ## test infrastructure
+
+### Exercise: set up test infrastructure
 
 Create manually, or run 
 
@@ -29,6 +31,8 @@ which:
 - adds `testthat` package as a Suggested package
 
 ## write some tests
+
+### Exercise: write tests
 
 Run 
 
@@ -49,6 +53,24 @@ test_that("multiplication works", {
 ```
 
 Add a test like that above if you don't have it already. 
+
+## run tests
+
+### Exercise: run tests
+
+from the command line
+
+```sh
+Rscript -e 'devtools::test()'
+```
+
+from R
+
+```r
+devtools::test()
+```
+
+Or buttons in IDE
 
 ## structure of a test file
 
