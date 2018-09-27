@@ -241,12 +241,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <a class="sourceLine" id="cb5-2" data-line-number="2">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;metacran/mason.rpkg&quot;</span>)</a>
 <a class="sourceLine" id="cb5-3" data-line-number="3">devtools<span class="op">::</span><span class="kw">install_github</span>(<span class="st">&quot;metacran/mason.github&quot;</span>)</a></code></pre></div>
 <p>Create a package</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">mason<span class="op">::</span><span class="kw">mason</span>(<span class="st">&#39;bar&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">mason<span class="op">::</span><span class="kw">mason</span>(<span class="st">&#39;github&#39;</span>)</a></code></pre></div>
+<p>See <a href="https://github.com/metacran/mason" class="uri">https://github.com/metacran/mason</a> for details</p>
 </div>
 <div id="usethis" class="section level2">
 <h2><span class="header-section-number">3.3</span> usethis</h2>
 <p>Optionally, you can use the <code>usethis</code> package <a href="https://github.com/r-lib/usethis" class="uri">https://github.com/r-lib/usethis</a>
-to help in step in package create/maintainance.</p>
+to help in package creation/maintainance.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">use_mit_license</span>(<span class="st">&quot;My Name&quot;</span>)</a>
 <a class="sourceLine" id="cb7-2" data-line-number="2"><span class="kw">use_package</span>(<span class="st">&quot;MASS&quot;</span>, <span class="st">&quot;Suggests&quot;</span>)</a>
 <a class="sourceLine" id="cb7-3" data-line-number="3"><span class="kw">use_dev_package</span>(<span class="st">&quot;callr&quot;</span>)</a>

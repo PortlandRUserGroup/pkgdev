@@ -39,13 +39,15 @@ devtools::install_github("metacran/mason.github")
 Create a package
 
 ```r
-mason::mason('bar')
+mason::mason('github')
 ```
+
+See <https://github.com/metacran/mason> for details
 
 ## usethis {#usethis}
 
 Optionally, you can use the `usethis` package <https://github.com/r-lib/usethis> 
-to help in step in package create/maintainance.
+to help in package creation/maintainance.
 
 ```r
 use_mit_license("My Name")
