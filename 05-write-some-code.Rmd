@@ -29,7 +29,7 @@ quick.
 
 ### Exercise
 
-__Write you own function__
+__Write your own function__
 
 * Write a function
 * Put it in a file in your R package
