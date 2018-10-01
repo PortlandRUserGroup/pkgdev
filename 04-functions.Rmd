@@ -26,7 +26,7 @@ foo(5)
 
 ## Exercise
 
-__Write you own function__
+__Write your own function__
 
 * Write a function
 * Run it!

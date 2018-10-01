@@ -9,7 +9,7 @@ knitr::opts_chunk$set(
 
 # Package structure {#package-structure}
 
-## Package metdata (`DESCRIPTION`)
+## Package metadata (`DESCRIPTION`)
 
 ```
 Package: mypackage
@@ -80,7 +80,7 @@ See \@ref(tests) for more.
 
 `data/` holds package data, used in your package functions, and optionally exposed to the user.
 
-## Complied Code (`src/`)
+## Compiled Code (`src/`)
 
 Typically C or C++ code ... too much detail for now.
 

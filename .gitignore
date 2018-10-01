@@ -1,6 +1,7 @@
 .Rproj.user
 .Rhistory
 .RData
+pkgdev.Rproj
 _publish.R
 _book
 _bookdown_files
