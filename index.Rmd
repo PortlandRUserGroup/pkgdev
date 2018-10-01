@@ -1,7 +1,6 @@
 --- 
 title: "R package development workshop"
 date: "`r paste0('built on ', Sys.Date())`"
-# author: "`r paste0('built w/ devtools v', packageVersion('devtools'))`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
